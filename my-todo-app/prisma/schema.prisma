@@ -15,8 +15,8 @@ datasource db {
 }
 
 model Todo {
-  id        Int @id   @default(autoincrement())
-  title     String 
-  completed Boolean   @default(false)
-  createdAt DataTime  @default(now())
+  id         Int @id   @default(autoincrement())
+  title      String 
+  completed  Boolean   @default(false)
+  created_at DataTime  @default(now())
 }
