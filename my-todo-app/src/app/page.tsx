@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
-
+import { StyledButton } from '../components/StyledButton'
 type Todo = {
   id: number
   title: string
@@ -66,6 +66,7 @@ export default function Home() {
           </li>
         ))}
       </ul>
+      <StyledButton variant="primary">Click Me</StyledButton>
     </main>
   )
 }
